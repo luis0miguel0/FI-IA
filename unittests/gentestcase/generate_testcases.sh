@@ -17,6 +17,8 @@ if awk "BEGIN {exit !($BITO_VERSION > 3.7)}"; then
        BITO_CMD_VEP="--agent gentestcase"
 fi
 
+#banner
+echo "$(cat unitix.txt)"
 
 # Ensure at least one argument is provided
 if [ "$#" -lt 1 ]; then
